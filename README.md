@@ -1,0 +1,2 @@
+# SampleSlideMenu
+スワイプで画面左端から表示されるSlideMenuのサンプル
