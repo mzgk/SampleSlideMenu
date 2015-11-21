@@ -28,6 +28,7 @@
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="ZUb-Vg-bX0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="0XC-h6-DDF"/>
                             <constraint firstItem="ZUb-Vg-bX0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="AIS-19-kRT"/>
@@ -56,9 +57,22 @@
                                 <include reference="mfO-K4-VU3"/>
                             </mask>
                         </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="oZC-EX-mDb" appends="YES" id="nfO-Ci-BfJ"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="containerView" destination="ZUb-Vg-bX0" id="fAJ-41-RvJ"/>
+                        <outlet property="containerViewLeading" destination="AIS-19-kRT" id="X7y-Lc-N4F"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="oZC-EX-mDb">
+                    <rectEdge key="edges" left="YES"/>
+                    <connections>
+                        <action selector="leftEdgePanGesture:" destination="BYZ-38-t0r" id="llh-np-7j7"/>
+                    </connections>
+                </screenEdgePanGestureRecognizer>
             </objects>
         </scene>
         <!--View Controller-->
@@ -68,7 +82,7 @@
                     <view key="view" contentMode="scaleToFill" id="sSc-i5-3U8">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Qs-kx-B9R" userLabel="First Responder" sceneMemberID="firstResponder"/>
