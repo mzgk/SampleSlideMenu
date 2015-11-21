@@ -58,7 +58,8 @@
                             </mask>
                         </variation>
                         <connections>
-                            <outletCollection property="gestureRecognizers" destination="oZC-EX-mDb" appends="YES" id="nfO-Ci-BfJ"/>
+                            <outletCollection property="gestureRecognizers" destination="kgv-3y-ZGK" appends="YES" id="9CF-8h-OWs"/>
+                            <outletCollection property="gestureRecognizers" destination="XLR-0f-UOn" appends="YES" id="SPN-fD-ki1"/>
                         </connections>
                     </view>
                     <connections>
@@ -67,12 +68,16 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="oZC-EX-mDb">
-                    <rectEdge key="edges" left="YES"/>
+                <swipeGestureRecognizer direction="right" id="kgv-3y-ZGK" userLabel="Right Swipe">
                     <connections>
-                        <action selector="leftEdgePanGesture:" destination="BYZ-38-t0r" id="llh-np-7j7"/>
+                        <action selector="rightSwipeGesture:" destination="BYZ-38-t0r" id="UVb-Ed-7cZ"/>
                     </connections>
-                </screenEdgePanGestureRecognizer>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="XLR-0f-UOn" userLabel="Left Swipe">
+                    <connections>
+                        <action selector="leftSwipeGesture:" destination="BYZ-38-t0r" id="is0-MC-EMp"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
         </scene>
         <!--View Controller-->
